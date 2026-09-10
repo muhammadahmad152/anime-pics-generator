@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Pics Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Anime Layer -->
+    <div class="bg-overlay"></div>
+    <div class="bg-image" id="bg-image"></div>
+
+    <!-- Dark / Light Mode Toggle -->
+    <div class="toggle-container">
+        <input type="checkbox" id="dark-mode" class="input">
+        <label for="dark-mode" class="label">
+            <div class="circle">
+                <!-- Sun Icon -->
+                <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <!-- Moon Icon -->
+                <svg class="icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </label>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h2>Anime Pics Generator</h2>
+        
+        <!-- Category Selection -->
+        <div class="category-box">
+            <label for="category">Select Category:</label>
+            <select id="category">
+                <option value="waifu">Waifu</option>
+                <option value="neko">Neko</option>
+                <option value="shinobu">Shinobu</option>
+                <option value="megumin">Megumin</option>
+            </select>
+        </div>
+
+        <!-- Controls -->
+        <div class="btn-group">
+            <button class="btn" id="btn">Get Anime</button>
+            <button class="btn download-btn" id="download-btn">Download Image</button>
+        </div>
+
+        <!-- Anime Card Display -->
+        <div class="anime-container">
+            <!-- Loading Spinner (JS controls visibility) -->
+            <div class="spinner" id="spinner" style="display: none;"></div>
+            
+            <img class="anime-img" id="anime-img" src="https://cdn.cgdream.ai/_next/image?url=https%3A%2F%2Fapi.cgdream.ai%2Frails%2Factive_storage%2Fblobs%2Fredirect%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNUg0emc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--41792ecff90196b3250799db6edfb71a67d0443d%2F3ab99f35-d687-4d63-8178-04b725dc20ea_0.png&w=1080&q=95" alt="Anime Image">
+            
+            <div class="anime-info">
+                <h3 class="anime-name" id="anime-name">Anime Name</h3>
+                <button id="like-btn" class="like-btn">❤️ Save Favorite</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
