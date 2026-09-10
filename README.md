@@ -126,7 +126,7 @@ Aspiring Software Engineer | Web Development | Future Cyber Security & AI Profes
 ### 🔗 Connect With Me
 
 * GitHub: https://github.com/muhammadahmad152
-* LinkedIn: Add your LinkedIn profile here
+* LinkedIn: https://www.linkedin.com/in/muhammad-ahmad-khan-419101367/
 
 ---
 
